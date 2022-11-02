@@ -13,8 +13,13 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles(()=>({
     link:{
         textDecoration:"none",
-        color: "#8f4311",
+        color: "white",
         fontSize: "20px",
+        "&:hover": {
+          color: "#f0c126",
+          
+          
+        }
         
           
         
@@ -24,7 +29,12 @@ const useStyles = makeStyles(()=>({
        
        
     }, paper: {
-      background: "#5f83c7"
+     
+      background: "radial-gradient(circle, rgba(36,138,142,1) 0%, rgba(215,184,163,1) 97%, rgba(209,180,161,1) 100%)",
+      height:"300px",
+      
+  
+      
     }
 }));
 
