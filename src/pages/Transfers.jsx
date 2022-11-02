@@ -47,13 +47,13 @@ const Transfers = () => {
      sx={{
              fontSize: { lg: 40, xs: 20, md:45, sm:30 },
               color:"white",
-            marginTop:-20, position:"absolute"}} >Private Transfers From Brbinj To Veli Zal</Typography>
+            marginTop:-40, position:"absolute"}} >Private Transfers From Brbinj To Veli Zal</Typography>
     
        <Button sx={{width: {lg:"160px", xs: "100px", md:220, sm:"180px"},textAlign:"center", 
 height: {lg:"60px", xs:"45px", md:90},
-        fontSize: { lg: '15px', xs: 10, md:25, sm:"16px" },
+        fontSize: { lg: '15px', xs: "13px", md:25, sm:"16px" },
         backgroundColor:'#2E3B55', color:"white",
-       marginTop:30, position:"absolute"}}  onClick={() => scrollDown(customSection)}
+       marginTop:20, position:"absolute"}}  onClick={() => scrollDown(customSection)}
    >See more...
     </Button>
         
@@ -70,7 +70,7 @@ height: {lg:"60px", xs:"45px", md:90},
      sx={{
       fontSize: { lg: 40, xs: 20, md:45, sm:30 },
               color:"white",
-            marginTop:-20, position:"absolute"}} >Private Transfers From Brbinj To Saharun</Typography>
+            marginTop:-40, position:"absolute"}} >Private Transfers From Brbinj To Saharun</Typography>
      
     
     
@@ -78,7 +78,7 @@ height: {lg:"60px", xs:"45px", md:90},
 height: {lg:"60px", xs:"45px", md:90},
         fontSize: { lg: '15px', xs: '13px', md:25, sm:"16px" },
         backgroundColor:'#2E3B55', color:"white",
-       marginTop:30, position:"absolute"}}  onClick={() => scrollDown(veliZalSection)}
+       marginTop:20, position:"absolute"}}  onClick={() => scrollDown(veliZalSection)}
    >See more...
     </Button>
     
@@ -90,13 +90,13 @@ height: {lg:"60px", xs:"45px", md:90},
      sx={{
       fontSize: { lg: 40, xs: 20, md:45, sm:30 },
               color:"white",
-            marginTop:-20, position:"absolute"}} >Private Transfers From Brbinj To Veli Rat</Typography>
+            marginTop:-40, position:"absolute"}} >Private Transfers From Brbinj To Veli Rat</Typography>
      
       <Button sx={{width: {lg:"160px", xs: "100px", md:220, sm:"180px"},textAlign:"center", 
 height: {lg:"60px", xs:"45px", md:90},
         fontSize: { lg: '15px', xs: '13px', md:25, sm:"16px" },
         backgroundColor:'#2E3B55', color:"white",
-       marginTop:30, position:"absolute"}}  onClick={() => scrollDown(saharunSection)}
+       marginTop:20, position:"absolute"}}  onClick={() => scrollDown(saharunSection)}
    >See more...
     </Button>
       </Paper>

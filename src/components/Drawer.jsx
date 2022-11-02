@@ -13,11 +13,18 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles(()=>({
     link:{
         textDecoration:"none",
-        color: "blue",
+        color: "#8f4311",
         fontSize: "20px",
+        
+          
+        
     },
     icon:{
-        color: "white"
+        color: "white",
+       
+       
+    }, paper: {
+      background: "#5f83c7"
     }
 }));
 
@@ -27,8 +34,8 @@ function DrawerComponent() {
     const [openDrawer, setOpenDrawer] = useState(false);
   return (
    <>
-    <Drawer  open={openDrawer}  onClose={() => setOpenDrawer(false)}  >
-        <List>
+    <Drawer  classes={{ paper: classes.paper }}  open={openDrawer}  onClose={() => setOpenDrawer(false)}  >
+        <List >
          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link to="/"
@@ -63,7 +70,7 @@ function DrawerComponent() {
         </List>
       </Drawer>
       <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
-        <MenuIcon className={classes.icon}/>
+        <MenuIcon className={classes.icon} />
       </IconButton>
       </>
   );

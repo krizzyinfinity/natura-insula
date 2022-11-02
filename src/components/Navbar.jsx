@@ -10,8 +10,10 @@ import {
     useTheme,
     useMediaQuery,
     makeStyles,
+    Grid,
    
   } from "@material-ui/core";
+  
  
   import {Link} from "react-router-dom"
 
@@ -19,26 +21,35 @@ import DrawerComponent from './Drawer';
  
 const useStyles = makeStyles((theme) => ({
   navlinks: {
-    marginLeft: theme.spacing(5),
+    marginLeft: theme.spacing(90),
     display: "flex",
+   
+    
   },
+ 
   logo: {
     flexGrow: "1",
     cursor: "pointer",
-    paddingRight:"100px"
+    
+   
+   
+    
+   
    
   },
   link: {
     textDecoration: "none",
     color: "white",
     fontSize: "20px",
-    marginLeft: theme.spacing(15),
+    marginLeft: theme.spacing(5),
     "&:hover": {
       color: "#f0c126",
       borderBottom: "1px solid white",
+      
     },
   },
 })); 
+
 
 const Navbar = () => {
   const classes = useStyles();
@@ -48,17 +59,18 @@ const Navbar = () => {
   return (
     
         <AppBar position="static"
-        style={{ background: '#2E3B55' }}>
+        style={{ background: '#2E3B55'}}>
       <CssBaseline />
-      <Toolbar>
-      <Typography variant="h4" className={classes.logo}>
-          Natura Insula
-        </Typography>
+      <Toolbar  >
+     <Grid justify="space-between" 
+      container 
+      spacing={24}>
+     <Typography variant="h4">Natura Insula</Typography>
        
             {isMobile ? (
-          <DrawerComponent />
+          <DrawerComponent  />
         ) : (
-          <div className={classes.navlinks}>
+          <div  className={classes.navlinks}>
             <Link to="/" className={classes.link}>
               Home
             </Link>
@@ -77,6 +89,7 @@ const Navbar = () => {
            
           </div>
         )}
+        </Grid>
             </Toolbar>
     </AppBar>
 );
