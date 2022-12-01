@@ -14,7 +14,7 @@ import { autoPlay } from 'react-swipeable-views-utils';
 import Kayak5 from "../img/kayak5.jpeg"
 import Kayak4 from "../img/kayak4.jpg"
 import Kayak2 from "../img/kayak2.jpg"
-import Kayak6 from "../img/kayak6.jpeg"
+import Kayak6 from "../img/Kayak6.jpeg"
 import Kayak3 from "../img/kayak3.png"
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [

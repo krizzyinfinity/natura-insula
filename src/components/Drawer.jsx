@@ -31,9 +31,12 @@ const useStyles = makeStyles(()=>({
     }, paper: {
      
       background: "radial-gradient(circle, rgba(36,138,142,1) 0%, rgba(215,184,163,1) 97%, rgba(209,180,161,1) 100%)",
-      height:"300px",
-      
-  
+      height:300,
+      alignItems:"center",
+      width:"55%",
+      top: 100,
+    left:"25%"
+    
       
     }
 }));
@@ -44,7 +47,8 @@ function DrawerComponent() {
     const [openDrawer, setOpenDrawer] = useState(false);
   return (
    <>
-    <Drawer  classes={{ paper: classes.paper }}  open={openDrawer}  onClose={() => setOpenDrawer(false)}  >
+    <Drawer 
+    classes={{ paper: classes.paper }}  open={openDrawer}  onClose={() => setOpenDrawer(false)}  >
         <List >
          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>

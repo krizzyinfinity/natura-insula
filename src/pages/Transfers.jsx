@@ -113,18 +113,13 @@ height: {lg:"60px", xs:"45px", md:90},
     <Typography 
     variant="h2" sx={{pt:10, fontSize:{lg:60, md:60, xs:35, sm:45}}} gutterBottom ref={customSection}>Brbinj to Veli Zal</Typography>
     <Typography  sx={{pl:5,pr:5, fontSize:{lg:20,md:20, sm:25, xs:18}, lineHeight:{lg:1.9, md:1.9, xs:1.5}, pb:10,}}>
-        Dugi Otok is 44 kilometers long and there is a lot to see
-        and a lot to explore. We offer private transfers from Brbinj to Veli Zal 
-        beach and that is our most sought after route. Veli Zal is very famous beach 
+        Veli Zal is the ultimate non commercialized beach, and is highly recommend for those wanting to reconnect with true unspoiled sea side. We offer private transfers from Brbinj
+        and that is our most sought after route. Veli Zal is very famous 
         on the island and features white sand in the sea and beautiful white pebbles outside.
-        We rent sun loungers and umbrellas on the beach so you are comfortable enjoying the summer time
-        and we also rent transparent and ocean kayaks if you feel adventurous enough or 
-        just want to break away from the beach. There is a small island called Mezanj just in front of the beach and 
-        that is a great opportunity for you to rent a kayak and go exploring. With crystal clear sea like that you might want 
-        to go snorkeling and that is also an opportunity to rent our crystal kayaks
-        as you can paddle and stare at the beautiful sea bed. Beside that, we also rent aquaglide equipment for windy days.
-        There is a beach bar on the beach that offers great food and drink. There is also a fast food near by if you don't mind
-        jumping in your car to get the food. 
+        We also rent sun loungers and umbrellas so you are comfortable enjoying your day at the beach. Our transparent canoes and ocean kayaks are there if you feel adventurous enough for one of our many safaris, 
+        or if you just want to break away from the beach, and head to the small island called Mezanj directly opposite. The crystal clear water will make you want 
+        to go snorkeling and that is the perfect opportunity to rent our crystal canoes,
+        as you can paddle and stare at the beautiful sea bed. We also rent aquaglide equipment for windy days, and the near by beach bar provides beach goers with the perfect venue to enjoy a bite and a drink. 
     </Typography>
     <Box sx={{mb:5, alignItems:"center", justifyContent:"center", display:"flex"
   }}>
@@ -139,18 +134,7 @@ height: {lg:"60px", xs:"45px", md:90},
       <hr className='myruler' />
     <Typography sx={{pt:10,fontSize:{lg:60, md:60, xs:35, sm:45}}}  variant="h2" gutterBottom ref={saharunSection}>Brbinj to Veli Rat</Typography>
     <Typography sx={{pl:5,pr:5, fontSize:{lg:20,md:20, sm:25, xs:18}, lineHeight:{lg:1.9, md:1.9, xs:1.5}, pb:10,}}>
-       This transfer is also amongst our most sought after route and we can offer it to you at 
-       affordable price as well. We can also all of our transfers with kayaking. Veli Rat is actually the biggest 
-       lighthouse in Adriatic sea and is very worth visiting. Beside the lighthouse there are two very cute pebbles beaches 
-       and a very famous shipwreck St Michelle which is acessible only by sea. Veli Rat is famous 
-       for a beautiful sunset and there is also an option you to 
-       rent kayaks from us and enjoy the lovely colours 
-       in privacy. The spot is renowed for weddings and wedding photosessions as well as 
-       many couples go there to enjoy the view.
-        Like mentioned in previous sections, we can also offer you custom routes 
-       transfers to multiple locations in one day. If you are in Zadar and 
-       want to see Dugi Otok in only one day, you can reach to us 
-       and we can offer you affordable transfers for Dugi Otok sightseeing
+       Veli Rat has arguably the best campsite on Dugi otok, and is the nearest departing point, for those wishing to go snorkel around the famous St Michelle shipwreck. Veli Rat is also famous for its lighthouse, the tallest in the Adriatic and it truly is worth a visit. Add the two very cute peebles beaches beside the lighthouse and the spot's reputation as the best sunset this side of Italy, and you have all of the best reasons in the world to come visit it.
         
     </Typography>
     <Box sx={{mb:5,alignItems:"center", justifyContent:"center", display:"flex"}}>
@@ -164,13 +148,8 @@ height: {lg:"60px", xs:"45px", md:90},
       <hr className='myruler' />
     <Typography sx={{pt:10,fontSize:{lg:60, md:60, xs:35, sm:45}}} variant="h2" gutterBottom ref={veliZalSection}>Bozava or Brbinj to Saharun beach</Typography>
     <Typography sx={{pl:5,pr:5, fontSize:{lg:20,md:20, sm:25, xs:18}, lineHeight:{lg:1.9, md:1.9, xs:1.5}, pb:10,}}>
-        Bozava to Saharun beach is a very popular transfer and we can offer it to you at 
-        affordable price. Not to say that you can be anywhere on the island and ask a transfer 
-        to Saharun beach. You can refer to our other sections to see what kind of transfers we offer. Basically,
-        we can drive you everywhere on the north side of the island. Saharun is the most famous beach on the island
-        and everyone wants to see it in person. You don't actually have to be in Bozava and want to see Saharun beach but you do 
-        have to be on the north side of the island. We can offer you custom made transfers as well in case you want to see the main attractions on the
-        island in one day, just send us a query and we can come up with something
+        Saharun is by far the most sought after destination on Dugi otok. It has aquired the reputation as one of Croatia's most beautiful beach. It is unique in that it is shallow and sandy.
+         Nested in a beautiful bay, Saharun is really a couple's dream, but beware the crowds !
     </Typography>
     <Box sx={{ alignItems:"center", justifyContent:"center", display:"flex"}}>
     <Button  onClick={() => scrollTop(topSection)}

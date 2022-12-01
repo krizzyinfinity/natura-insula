@@ -58,7 +58,7 @@ const Navbar = () => {
 
   return (
     
-        <AppBar position="static"
+        <AppBar position="fixed"
         style={{ background: '#2E3B55'}}>
       <CssBaseline />
       <Toolbar  >

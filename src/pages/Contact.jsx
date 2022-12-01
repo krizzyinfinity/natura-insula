@@ -32,7 +32,8 @@ const Contact = () => {
   const classes = useStyles()
   
   return (
-    <Box className={classes.demowrap}>
+    <Box 
+     className={classes.demowrap}>
      
        <Box className={classes.demoContent}
      

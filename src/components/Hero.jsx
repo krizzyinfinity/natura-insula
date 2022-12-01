@@ -26,7 +26,7 @@ const Hero = () => {
       component="img"
      position="relative"
     
-        alt="Transparent kayak"
+        alt="Transparent kayak "
         src={Image}
       />
    </ThemeProvider>
