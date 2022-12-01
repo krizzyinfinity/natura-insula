@@ -308,7 +308,7 @@ const Watersports = () => {
           alt="Paddle board"
         />
         <CardContent>
-          <Typography variant="body2" color="text.secondary">
+          <Typography sx={{fontSize:"140%"}} variant="body2" color="text.secondary">
             As well as kayaks we also rent SUP boards. Prices are also for
             hourly and daily rates, for more information, call us on 0957116161
             or 09577145168. Rate are per SUP boards.
