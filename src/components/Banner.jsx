@@ -48,14 +48,14 @@ const Banner = ({title, name}) => {
        zIndex="modal"
         align="center"
         
-  sx={{width:{lg:650, xs:180, sm:300, md:500}, 
-  height:{lg:400, xs:190, sm:200, md:350},
+  sx={{width:{lg:60, xs:220, sm:350, md:500}, 
+  height:{lg:400, xs:190, sm:300, md:400},
   
 }}
   
       >
        <Typography
-        sx={{marginBottom:"18%", fontSize: {  xs: '1.2rem', md:"2.6rem" , sm:"1.6rem", lg:39},
+        sx={{marginBottom:"15%", fontSize: {  xs: '1.2rem', md:"2.6rem" , sm:"1.8rem", lg:39},
         }} >{title}</Typography> 
         
        <Buttons className={classes.link}  name={name}  />

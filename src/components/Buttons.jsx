@@ -10,7 +10,7 @@ import { useTheme,
     link: {
       textDecoration: "none",
       color: "white",
-      fontSize: "20px",
+      fontSize: "18px",
       marginLeft: theme.spacing(15),
       "&:hover": {
         background: "transparent",
@@ -28,9 +28,9 @@ const Buttons = ({name}) => {
 
        
 <Button component={Link} to="/contact"  className={classes.link}
- sx={{ width: {lg:"160px", xs: "100px", md:220, sm:"180px"},textAlign:"center", 
-height: {lg:"60px", xs:"45px", md:90},
-        fontSize: { lg: '15px', xs: '13px', md:25, sm:"16px" },
+ sx={{ width: {lg:"160px", xs: "140px", md:220, sm:"180px"},textAlign:"center", 
+height: {lg:"70px", xs:"45px", md:110, sm:75},p:3,lineHeight:1.2,
+        fontSize: { lg: '15px', xs: '12px', md:22, sm:"16px" },
         backgroundColor:"#f0c126", color:'#2E3B55', fontWeight:"bold"
        }}>
           {name}

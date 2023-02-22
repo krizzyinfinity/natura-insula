@@ -11,7 +11,10 @@ import BoatTours from './pages/BoatTours';
 import Contact from './pages/Contact';
 import Activities from './pages/Activities';
 import Transfers from './pages/Transfers';
+import { useEffect } from 'react';
+import { Accommodation } from './pages/Accommodation';
 function App() {
+ 
   return (
     <div className="App">
     <Navbar />
@@ -21,6 +24,7 @@ function App() {
         <Route path="/boatTours" element={<BoatTours />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/transfers" element={<Transfers />} />
+        <Route path="/accommodation" element={<Accommodation />} />
         <Route path="/contact" element={<Contact />} />
        
       </Routes>

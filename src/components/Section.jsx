@@ -16,6 +16,7 @@ import Kayak4 from "../img/kayak4.jpg"
 import Kayak2 from "../img/kayak2.jpg"
 import Kayak6 from "../img/kayak6.jpeg"
 import Kayak3 from "../img/kayak3.png"
+import { useTranslation } from 'react-i18next';
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
     {
@@ -28,7 +29,7 @@ const images = [
     },
         
     {
-      label: 'Golubinka cave',
+      label:"Golubinka cave",
       imgPath:Kayak2,
        
     },
@@ -46,7 +47,12 @@ const Section = () => {
     const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
-
+  const {t, i18n} = useTranslation()
+  
+  React.useEffect(()=> {
+const lang = navigator.language;
+i18n.changeLanguage(lang);
+  },[])
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
@@ -64,7 +70,7 @@ const Section = () => {
     <Box >
         <Typography variant="h5"
         sx={{textAlign:"center", fontSize:{lg:"69px", md:"89px", sm:"90px"}}}>
-            Gallery
+            {t("gallery")}
         </Typography>
     </Box>
     <Box sx={{ maxWidth:700, flexGrow: 1,  margin:"auto", width:{xs:300, sm:600, md:700, lg:700} }}>
@@ -93,11 +99,12 @@ const Section = () => {
             <Box
               component="img"
               sx={{
-                height: 355,
+                height:{xl:550, lg:500, md:500, xs:350, sm:450},
     maxWidth: 700,
+ 
     overflow: 'hidden',
     display: 'block',
-    width: '100%',
+    width:"100vw"
                 
               }}
               src={step.imgPath}
@@ -117,7 +124,7 @@ const Section = () => {
           onClick={handleNext}
           disabled={activeStep === maxSteps - 1}
         >
-          Next
+         
           {theme.direction === 'rtl' ? (
             <KeyboardArrowLeft />
           ) : (
@@ -132,7 +139,7 @@ const Section = () => {
           ) : (
             <KeyboardArrowLeft />
           )}
-          Back
+         
         </Button>
       }
     />

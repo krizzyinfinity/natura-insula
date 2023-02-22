@@ -21,6 +21,27 @@
   
 }
 
+.div > * {
+  z-index: 100;
+}
+.div {
+  overflow: hidden;
+  background-image:  url("../src/img/pic1.jpg");;
+}
+
+.div::after {
+  content: "";  
+  position: absolute;
+  width: 75%; 
+  height: 100%;
+  top: 0;
+  left: 50%; 
+  transform: skew(20deg) 
+             translateX(-50%); 
+  background-image: linear-gradient(120deg,#eaee44,#33d0ff);
+  opacity: 0.6;
+}
+
 
 .btn-primary:hover {
   background: transparent;

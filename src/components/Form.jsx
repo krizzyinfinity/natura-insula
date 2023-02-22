@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {FormControl,
      InputLabel,
@@ -6,6 +6,7 @@ import {FormControl,
        FormHelperText,
     TextField,
 Button }from '@mui/material';
+import { useTranslation} from 'react-i18next';
 import { Box } from '@material-ui/core';
 import emailjs from "@emailjs/browser";
 
@@ -27,6 +28,11 @@ const theme = createTheme({
 
 
 const Form = () => {
+  const {t, i18n} = useTranslation()
+  useEffect(()=> {
+const lang = navigator.language;
+i18n.changeLanguage(lang);
+  },[])
     const [done, setDone] = useState(false);
   const formRef = useRef();
     
@@ -60,34 +66,34 @@ const Form = () => {
      <form onSubmit={handleSubmit} ref={formRef} > 
     <FormControl >
   
-    <InputLabel htmlFor="my-input" sx={{fontSize:"40px"}}
-  >Contact Form</InputLabel>
+    <InputLabel htmlFor="my-input" sx={{fontSize:{xs:25, sm:30, md:27, lg:27, xl:27}}}
+  >{t("form")}</InputLabel>
   
   
   <ThemeProvider theme={theme}>
-  <TextField id="outlined-basic" label="Name"  
+  <TextField id="outlined-basic" label={t("name")}  
     name="user_name" color="neutral" variant="outlined"
-  sx={{mb:2, mt:9}}>Name </TextField>
+  sx={{mb:2, mt:9}}>{t("name")} </TextField>
   <TextField sx={{mb:2}}id="outlined-basic" name="user_subject" 
   
-   label="Your Title" color="neutral" variant="outlined">Your Subject </TextField>
-  <TextField sx={{mb:2}}id="outlined-basic" label="Email"
+   label={t("title")} color="neutral" variant="outlined" />
+  <TextField sx={{mb:2}}id="outlined-basic" label={t("email")}
   
-   name="user_email" color="neutral" variant="outlined">Email </TextField>
+   name="user_email" color="neutral" variant="outlined" />
   <TextField
   sx={{mb:2}}
         id="outlined-multiline-static"
-        label="Your message"
+        label={t("message")}
         multiline
         rows={4}
         name="text"
         color="neutral"
         
         />
-        <FormHelperText sx={{mb:2, fontSize:"15px"}} id="my-helper-text" >We will get back to you as soon as possible!</FormHelperText>
+        <FormHelperText sx={{mb:2, fontSize:"15px"}} id="my-helper-text" >{t("soon")}</FormHelperText>
        
-        <Button variant="contained" color="neutral" type="submit">Send</Button>
-        {done && "Your email has been sent. Thank you!"}
+        <Button variant="contained" color="neutral" type="submit">{t("send2")}</Button>
+        {done && (t("emailSent"))}
         </ThemeProvider>
 </FormControl>
 </form>
