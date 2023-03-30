@@ -86,7 +86,7 @@ i18n.changeLanguage(lang);
         label={t("message")}
         multiline
         rows={4}
-        name="text"
+        name="message"
         color="neutral"
         
         />
