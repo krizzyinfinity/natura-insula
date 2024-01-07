@@ -27,6 +27,11 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: "1",
     cursor: "pointer",
   },
+  link2: {
+    textDecoration: "none",
+    color: "white",
+    fontSize: "16px",
+  },
   link: {
     textDecoration: "none",
     color: "white",
@@ -55,7 +60,8 @@ const Navbar = () => {
       <CssBaseline />
       <Toolbar >
         <Grid style={{alignItems:"center", justifyContent:"space-between"}}  container spacing={24}>
-          <Typography variant="h4">Natura Insula</Typography>
+          <Link to="/" className={classes.link2} >
+                <Typography variant="h4">Natura Insula</Typography></Link>
 
           {isMobile ? (
             <DrawerComponent/>
@@ -64,9 +70,9 @@ const Navbar = () => {
               <Link to="/" className={classes.link}>
                 {t("home")}
               </Link>
-              <Link to="/boatTours" className={classes.link}>
+              {/* <Link to="/boatTours" className={classes.link}>
                 {t("boat")}
-              </Link>
+              </Link> */}
               <Link to="/activities" className={classes.link}>
                 {t("activities")}
               </Link>

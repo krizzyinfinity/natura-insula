@@ -13,6 +13,9 @@ import Activities from './pages/Activities';
 import Transfers from './pages/Transfers';
 import { useEffect } from 'react';
 import { Accommodation } from './pages/Accommodation';
+import Safari from './pages/Safari';
+import OneDayTours from './pages/OneDayTours';
+import TwoDaysTours from './pages/TwoDaysTours';
 function App() {
  
   return (
@@ -26,7 +29,9 @@ function App() {
         <Route path="/transfers" element={<Transfers />} />
         <Route path="/accommodation" element={<Accommodation />} />
         <Route path="/contact" element={<Contact />} />
-       
+        <Route path="/safari" element={<Safari />} />
+        <Route path="/oneDayTours" element={<OneDayTours />} />
+        <Route path="/twoDaysTours" element={<TwoDaysTours />} />
       </Routes>
       <Footer />
     </div>
