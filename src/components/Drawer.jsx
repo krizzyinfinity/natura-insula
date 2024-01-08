@@ -58,9 +58,9 @@ function DrawerComponent() {
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/boatTours" className={classes.link}>
+              {/* <Link to="/boatTours" className={classes.link}>
                 {t("boat")}
-              </Link>
+              </Link> */}
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>

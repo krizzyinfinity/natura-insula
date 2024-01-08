@@ -45,25 +45,25 @@ i18n.changeLanguage(lang);
 </Grid>
 <Grid style={{ marginTop:"50px"}}   container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3, lg:1 }} >
 <Grid style={{backgroundColor:"grey", padding:"10px"}}  item xs={12}sm={3}>
-    <Typography  style={{color:"white"}} variant='h5'>DURATION</Typography>
-    <Typography  style={{color:"white"}} variant='h6'>2 Days</Typography>
+    <Typography  style={{color:"white"}} variant='h5'>{t("duration")}</Typography>
+    <Typography  style={{color:"white"}} variant='h6'>{t("duration4")}</Typography>
     </Grid>
     <Grid style={{backgroundColor:"darkgoldenrod"}}  item xs={12}sm={3}>
-    <Typography  style={{color:"white"}} variant='h5'>DISTANCE</Typography>
-    <Typography  style={{color:"white"}} variant='h6'>21 kilometers</Typography>
+    <Typography  style={{color:"white"}} variant='h5'>{t("distance")}</Typography>
+    <Typography  style={{color:"white"}} variant='h6'>{t("distance4")}</Typography>
     </Grid>
     <Grid style={{backgroundColor:"grey"}}  item xs={12}sm={3}>
-    <Typography  style={{color:"white"}} variant='h5'>DIFFICULTY</Typography>
-    <Typography  style={{color:"white"}} variant='h6'>Moderate/Hard</Typography>
+    <Typography  style={{color:"white"}} variant='h5'>{t("difficulty")}</Typography>
+    <Typography  style={{color:"white"}} variant='h6'>{t("hard")}</Typography>
     </Grid>
     <Grid style={{backgroundColor:"darkgoldenrod"}}  item xs={12}sm={3}>
-    <Typography  style={{color:"white"}} variant='h5'>DEPARTURE</Typography>
-    <Typography style={{color:"white"}} variant='h6'>From 8:30AM to 10:30AM the latest</Typography>
+    <Typography  style={{color:"white"}} variant='h5'>{t("departure")}</Typography>
+    <Typography style={{color:"white"}} variant='h6'>{t("departure1")}</Typography>
     </Grid>
     </Grid>
     <Box sx={{display:"flex", justifyContent:{lg:"flex-start", xs:"center"}, flexDirection:"column",
     marginTop:"20px", alignItems:{lg:"flex-start", xs:"center"}, marginLeft:{lg:20, xs:5}}}>
-        <Typography style={{color:"darkgoldenrod"}} variant='h4'>USEFUL INFO</Typography>
+        <Typography style={{color:"darkgoldenrod"}} variant='h4'>{t("usefulInfo")}</Typography>
         <Typography variant='h6' style={{marginBottom:"15px"}}>What is included?</Typography>
         <Typography>- All equipment - Kayak, paddle, snorkling gear, parasol, dry bag and safety vest if needed.</Typography>
        
@@ -82,16 +82,16 @@ i18n.changeLanguage(lang);
 ​</Typography>
 <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Meeting point</Typography>
 <Typography>Brbinj/Bozava port</Typography>
-<Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>PRICING</Typography>
+<Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("pricing")}</Typography>
 
 <Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>100Є per person</span>  with tent option</Typography>
 
 <Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>Between 130Є and 150Є per person </span>for studio apartment with swimming pool based on the time of the year</Typography>
 
 
-<Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>BOOKING</Typography>
-<Typography variant='h6' style={{marginBottom:"15px"}}> For all querries/bookings please send an  
-<ButtonMailto  label=" email" mailto="mailto:signoretjules@gmail.com" /></Typography>
+<Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("booking")}</Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}>  {t("queries")}
+<ButtonMailto  label={t("email")} mailto="mailto:signoretjules@gmail.com" /></Typography>
        </Box>
 </Box>
 

@@ -26,7 +26,8 @@
 }
 .div {
   overflow: hidden;
-  background-image:  url("../src/img/pic1.jpg");;
+  background-image:  url("../src/img/pool_ruza.jpg");
+  background-size: cover;
 }
 
 .div::after {
