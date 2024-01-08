@@ -1,8 +1,13 @@
 import { Box, Grid, Paper, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Safari from "../img/safari.jpg"
+import Beach from "../img/beach.png"
+import Kayak from "../img/kayak4.jpg";
 import { Link } from 'react-router-dom'
+import { useTranslation} from 'react-i18next';
+
 const ButtonMailto = ({ mailto, label }) => {
+    
     return (
         <Link style={{textDecoration:"none", color:"goldenrod"}}
             to='#'
@@ -16,23 +21,26 @@ const ButtonMailto = ({ mailto, label }) => {
     );
 };
 const OneDayTours = () => {
+    const {t, i18n} = useTranslation()
+  useEffect(()=> {
+const lang = navigator.language;
+i18n.changeLanguage(lang);
+  },[])
+  const lang = navigator.language;
    
   return (
     <Box >
         <Typography variant='h2' sx={{marginTop:"100px", fontWeight:"bold", color:"darkgoldenrod", marginBottom:"20px",
-     fontSize:{lg:45,md:40, sm:30, xs:32}}}>Veli Zal beach to Golubinka cave</Typography>
+     fontSize:{lg:45,md:40, sm:30, xs:32}}}>{t("trail1")}</Typography>
        <Box style={{ marginRight:"30px", marginLeft:"30px"}}  >
         <Grid style={{justifyContent:"center", alignItems:"center"}} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3, lg:1 }} >
   <Grid  item xs={12} sm={6} >
   <Box component="img" src={Safari}  sx={{ height: {lg:400, sm:300, xs:300 }, width: {lg:400, sm:300, xs:300 }}} />
   </Grid>
   <Grid item xs={12} sm={6}>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>Depart from Veli Zal and head south to Golubinka cave. With 4 private beaches on the way down,</Typography>
-  <Typography sx={{fontSize:{lg:20,md:20, sm:20, xs:18}}}> you will have sufficient places to stop, sunbathe and relax.If you're lucky you might even get to </Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>see a dolphin pack on your way.</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>Golubinka Cave is a very popular sea cave visited by many each year.</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>One option is for you to do a round trip or we can come and pick you up.</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>It is a day rental and all equipment is due back by 6PM</Typography>
+  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}, lineHeight:2}}>
+  {t("trail1Text")}
+ </Typography>
 </Grid>
   
  
@@ -88,19 +96,14 @@ const OneDayTours = () => {
        </Box>
 </Box>
 <Typography variant='h2' sx={{marginTop:"100px", fontWeight:"bold", color:"darkgoldenrod", marginBottom:"20px",
-     fontSize:{lg:45,md:40, sm:30, xs:32}}}>Crystal experience</Typography>
+     fontSize:{lg:45,md:40, sm:30, xs:32}}}>{t("trail2")}</Typography>
        <Box style={{ marginRight:"30px", marginLeft:"30px"}}  >
         <Grid style={{justifyContent:"center", alignItems:"center"}} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3, lg:1 }} >
   <Grid  item xs={12} sm={6} >
-  <Box component="img" src={Safari}  sx={{ height: {lg:400, sm:300, xs:300 }, width: {lg:400, sm:300, xs:300 }}} />
+  <Box component="img" src={Kayak}  sx={{ height: {lg:400, sm:300, xs:300 }, width: {lg:400, sm:300, xs:300 }}} />
   </Grid>
   <Grid item xs={12} sm={6}>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>Start your journey from Dragove village's own bay on the east coast of Dugi Otok,</Typography>
-  <Typography sx={{fontSize:{lg:20,md:20, sm:20, xs:18}}}> and head North to visit, not just the coastline, but also the two bunkers built during   </Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>the Tito era of the ex Yugoslavia. Purpose built for hiding interception ships, you will also find a few beaches,</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>secluded olive groves, small islands and you could even stop in Bozava for lunch</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>in one of the local restaurants</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>It is a day rental and all equipment is due back by 6PM</Typography>
+  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}, lineHeight:2}}>{t("trail2Text")}</Typography>
 </Grid>
   
  
@@ -160,19 +163,14 @@ const OneDayTours = () => {
 </Box>
 
 <Typography variant='h2' sx={{marginTop:"100px", fontWeight:"bold", color:"darkgoldenrod", marginBottom:"20px",
-     fontSize:{lg:45,md:40, sm:30, xs:32}}}>The Lagoon's Trail</Typography>
+     fontSize:{lg:45,md:40, sm:30, xs:32}}}>{t("trail3")}</Typography>
        <Box style={{ marginRight:"30px", marginLeft:"30px"}}  >
         <Grid style={{justifyContent:"center", alignItems:"center"}} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3, lg:1 }} >
   <Grid  item xs={12} sm={6} >
-  <Box component="img" src={Safari}  sx={{ height: {lg:400, sm:300, xs:300 }, width: {lg:400, sm:300, xs:300 }}} />
+  <Box component="img" src={Beach}  sx={{ height: {lg:400, sm:300, xs:300 }, width: {lg:400, sm:300, xs:300 }}} />
   </Grid>
   <Grid item xs={12} sm={6}>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>Travel from Veli Zal beach to Saharun, one of Croatia's most famous beaches.</Typography>
-  <Typography sx={{fontSize:{lg:20,md:20, sm:20, xs:18}}}> On the way you'll find many spots along the rocky coastline to stop, and snorkel, </Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}> including one of Dugi Otok's most famous dive spots in Lopata.</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>This trail will be appealing to visitors who come from the city for a one-day trip</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>Take the opportunity to visit two of the most beautiful beaches on the island</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>It is a day rental and all equipment is due back by 6PM</Typography>
+  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}, lineHeight:2}}>{t("trail3Text")}</Typography>
 </Grid>
   
  

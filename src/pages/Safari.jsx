@@ -62,7 +62,7 @@ i18n.changeLanguage(lang);
          <Box >
           <Typography  sx={{ fontSize: "240%" }}
               variant="body2"
-              color="text.secondary">ONE DAY TOURS</Typography>
+              color="text.secondary">{t("tours")}</Typography>
             
           <CardContent>
             <Typography
@@ -70,7 +70,7 @@ i18n.changeLanguage(lang);
               variant="body2"
               color="text.secondary"
             >
-              Adventure starts from Veli zal beach
+              {t("adventure")}
             </Typography>
             <Link to="/oneDayTours">
             <Button  style={{ backgroundColor:"#2E3B55", borderRadius:"2px", color:"white",marginTop:"40px" }}> {t("more")}</Button>
@@ -90,14 +90,14 @@ i18n.changeLanguage(lang);
          <Box>
           <Typography  sx={{ fontSize: "240%", marginTop:"2px", }}
               variant="body2"
-              color="text.secondary">TWO DAYS TOURS</Typography>
+              color="text.secondary">{t("twoDays")}</Typography>
           <CardContent>
             <Typography
               sx={{ fontSize: "140%" }}
               variant="body2"
               color="text.secondary"
             >
-              Tours that include an accommodation
+             {t("twoDays2")}
             </Typography>
             <Link to="/twoDaysTours">
             <Button  style={{ backgroundColor:"#2E3B55", borderRadius:"2px", color:"white",marginTop:"40px"  }}> {t("more")}</Button>

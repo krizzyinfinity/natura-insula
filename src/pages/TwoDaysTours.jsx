@@ -1,7 +1,8 @@
 import { Box, Grid, Paper, Typography } from '@mui/material'
-import React from 'react'
-import Safari from "../img/safari.jpg"
+import React, { useEffect } from 'react'
+import Safari from "../img/trail.PNG"
 import { Link } from 'react-router-dom'
+import { useTranslation} from 'react-i18next';
 const ButtonMailto = ({ mailto, label }) => {
     return (
         <Link style={{textDecoration:"none", color:"goldenrod"}}
@@ -16,27 +17,28 @@ const ButtonMailto = ({ mailto, label }) => {
     );
 };
 const TwoDaysTours = () => {
+    const {t, i18n} = useTranslation()
+  useEffect(()=> {
+const lang = navigator.language;
+i18n.changeLanguage(lang);
+  },[])
+  const lang = navigator.language;
    
   return (
     <Box >
         <Typography variant='h2' sx={{marginTop:"100px", fontWeight:"bold", color:"darkgoldenrod", marginBottom:"20px",
-     fontSize:{lg:45,md:40, sm:30, xs:32}}}>Veli Rat (lighthouse) to Golubinka cave</Typography>
+     fontSize:{lg:45,md:40, sm:30, xs:32}}}>{t("trail4")}</Typography>
        <Box style={{ marginRight:"30px", marginLeft:"30px"}}  >
         <Grid style={{justifyContent:"center", alignItems:"center"}} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3, lg:1 }} >
   <Grid  item xs={12} sm={6} >
   <Box component="img" src={Safari}  sx={{ height: {lg:400, sm:300, xs:300 }, width: {lg:400, sm:300, xs:300 }}} />
   </Grid>
   <Grid item xs={12} sm={6}>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>For the more adventurous, why not combine the two most sought after attractions</Typography>
-  <Typography sx={{fontSize:{lg:20,md:20, sm:20, xs:18}}}>of Dugi Otok, plus its most stunning beaches and a huge chunk of its coastline.</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>You will be given the option to sleep au naturel in a designated spot, </Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>with a provided tent and all necessary equipment, or in our accomodation </Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>in Dragove village (based on availability).</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>Day 1</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>Depart from Veli Rat and travel to St Michelle shipwreck. Then head south to Saharun beach passing by stunning high cliff scenery, </Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}> as well as the very popular snorkeling spot of Lopata. You will then be required to do a further 6 km to reach your end point of the day, near Veli Zal beach. Your resting place for the night to be agreed upon prior to departure. </Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>Day 2</Typography>
-  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>Head south to Golubinka cave at your chosen time. Pass by two of the most amazing beaches only accessibe by sea, and enter the cave for around 1pm. You are then only a short distance from your pick up point and end of journey. </Typography>
+  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>{t("trail4Text")}</Typography>
+  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}, fontWeight:"bold"}}>{t("day1")}</Typography>
+  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>{t("day1Text")}</Typography>
+  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}, fontWeight:"bold"}}>{t("day2")}</Typography>
+  <Typography sx={{ fontSize:{lg:20,md:20, sm:20, xs:18}}}>{t("day2Text")}</Typography>
 </Grid>
   
  

@@ -12,14 +12,14 @@ import {
   Collapse,
   Snackbar,
 } from "@mui/material";
-import Kayak from "../img/kayak1.jpg";
+import Kayak from "../img/kayak4.jpg";
 import Sup from "../img/sup.jfif";
-import Diver from "../img/diver.jfif";
-import Aquaglide from "../img/aquaglide.jfif";
+import Diver from "../img/diver.png";
+import Scooter from "../img/elSkuter.jpg";
 
 import Bikes from "../img/bikes.jfif";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Sunset from "../img/sunset.jfif";
+import Sunset from "../img/sunset.png";
 import IconButton from "@mui/material/IconButton";
 import Safari2 from "../img/safari2.jpg";
 import ShareIcon from "@mui/icons-material/Share";
@@ -112,7 +112,7 @@ const Watersports = () => {
           elevation={9}
           sx={{
             width: { xl: 400, xs: 300, sm: 300, md: 400, lg: 400 },
-            minHeight: 700,
+            minHeight: 740,
           }}
         >
           {/* <CardHeader title={t("kayak")} subheader={t("daily")} /> */}
@@ -126,12 +126,70 @@ const Watersports = () => {
               variant="body2"
               color="text.secondary"
             >
-             Most popular costline spots are situated in the North-West of the island. Whether on or under the surface of the water. For many it is the best to have a guide but for those of you out there wishing to explore on your own, this is your ticket to freedom. We offer several routes with varying levels of difficulty
+             {t("text2")}
             </Typography>
           </CardContent>
           <Link to="/safari">
           <Button  style={{ backgroundColor:"#2E3B55", borderRadius:"2px", color:"white" }}> {t("more")}</Button>
           </Link>
+        </Card>
+        <Card
+            elevation={9}
+            sx={{
+              width: { xl: 400, xs: 300, sm: 300, md: 400, lg: 400 },
+              minHeight: 640,
+            }}
+          >
+           
+            <CardMedia
+              component="img"
+              height="285"
+              image={Sup}
+              alt="Paddle board"
+            />
+               <Typography  sx={{ fontSize: "240%", marginTop:"2px", }}
+              variant="body2"
+              color="text.secondary">{t("sup")}</Typography>
+            <CardContent>
+              <Typography
+                sx={{ fontSize: "140%" }}
+                variant="body2"
+                color="text.secondary"
+              >
+                {t("text12")}
+              </Typography>
+            </CardContent>
+           
+          </Card>
+          <Card
+          elevation={9}
+          sx={{
+            width: { xl: 400, xs: 300, sm: 300, md: 400, lg: 400 },
+            minHeight: 640,
+          }}
+        >
+         
+         
+          <CardMedia
+            component="img"
+            height="285"
+            image={Scooter}
+            alt="Aquaglide rent"
+          />
+             <Typography  sx={{ fontSize: "240%", marginTop:"2px", }}
+              variant="body2"
+              color="text.secondary">{t("glide")}</Typography>
+                
+          <CardContent>
+            <Typography
+              sx={{ fontSize: "140%" }}
+              variant="body2"
+              color="text.secondary"
+            >
+              {t("text11")}
+            </Typography>
+          </CardContent>
+          
         </Card>
       
         <Card
@@ -168,6 +226,7 @@ const Watersports = () => {
            
           </CardContent>
         </Card>
+       
      
         <Card
           elevation={9}
@@ -200,38 +259,7 @@ const Watersports = () => {
      
       
       
-        <Card
-          elevation={9}
-          sx={{
-            width: { xl: 400, xs: 300, sm: 300, md: 400, lg: 400 },
-            minHeight: 640,
-          }}
-        >
-         
-         
-          <CardMedia
-            component="img"
-            height="285"
-            image={Aquaglide}
-            alt="Aquaglide rent"
-          />
-             <Typography  sx={{ fontSize: "240%", marginTop:"2px", }}
-              variant="body2"
-              color="text.secondary">{t("glide")}</Typography>
-                 <Typography  sx={{ fontSize: "140%", marginTop:"2px", }}
-              variant="body2"
-              color="text.secondary">{t("beginners")}</Typography>
-          <CardContent>
-            <Typography
-              sx={{ fontSize: "140%" }}
-              variant="body2"
-              color="text.secondary"
-            >
-              {t("text11")}
-            </Typography>
-          </CardContent>
-          
-        </Card>
+        
         
         
           <Card
@@ -267,34 +295,7 @@ const Watersports = () => {
            
           </Card>
         
-          <Card
-            elevation={9}
-            sx={{
-              width: { xl: 400, xs: 300, sm: 300, md: 400, lg: 400 },
-              minHeight: 640,
-            }}
-          >
-           
-            <CardMedia
-              component="img"
-              height="285"
-              image={Sup}
-              alt="Paddle board"
-            />
-               <Typography  sx={{ fontSize: "240%", marginTop:"2px", }}
-              variant="body2"
-              color="text.secondary">{t("sup")}</Typography>
-            <CardContent>
-              <Typography
-                sx={{ fontSize: "140%" }}
-                variant="body2"
-                color="text.secondary"
-              >
-                {t("text12")}
-              </Typography>
-            </CardContent>
-           
-          </Card>
+          
         </Box>
        
       </Box>
