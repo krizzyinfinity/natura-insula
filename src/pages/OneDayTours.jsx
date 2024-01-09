@@ -66,28 +66,26 @@ i18n.changeLanguage(lang);
     <Box sx={{display:"flex", justifyContent:{lg:"flex-start", xs:"center"}, flexDirection:"column",
     marginTop:"20px", alignItems:{lg:"flex-start", xs:"center"}, marginLeft:{lg:20, xs:5}}}>
         <Typography style={{color:"darkgoldenrod"}} variant='h4'>{t("usefulInfo")}</Typography>
-        <Typography variant='h6' style={{marginBottom:"15px"}}>What is included?</Typography>
-        <Typography>- All equipment - Kayak/SUP, paddle, snorkling gear, parasol, dry bag and safety vest if needed.</Typography>
+        <Typography variant='h6' style={{marginBottom:"15px"}}>{t("including")}</Typography>
+        <Typography>{t("allEquipment")}</Typography>
        
-       <Typography>- Pick up and drop-off from Brbinj/Bozava harbour</Typography>
-       <Typography>- Pack lunch with 750ml water per person</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>What to bring?</Typography>
-       <Typography>Swimwear, towel, dry clothes to change into, sunscreen and hat</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Safety</Typography>
-       <Typography>Previous SUP/Kayak experience is desirable but not essential. Julien will provide a detailed itinerary and all of the dos and don'ts for a safe and enjoyable experience.</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Weather</Typography>
-       <Typography>We closely monitor local weather forecasts and will inform you of what kind of weather you can expect.</Typography>
-
- <Typography> In the case of bad weather, we will try to reschedule your adventure or give you alternative locations. 
-
-​</Typography>
-<Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Meeting point</Typography>
-<Typography>We are on Veli zal beach, but pick-up is also a possibility as well as other locations</Typography>
+       <Typography>{t("pickUp")}</Typography>
+       <Typography>{t("lunch")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("what")}</Typography>
+       <Typography>{t("swimsuit")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("safety")}</Typography>
+       <Typography>{t("safety2")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("weather")}</Typography>
+       <Typography>{t("weather2")}</Typography>
+       <Typography>{t("weather3")}</Typography>
+ 
+<Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("meeting")}</Typography>
+<Typography>{t("meeting1")}</Typography>
 <Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("pricing")}</Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>40Є per person</span>  without pick-up and drop-off </Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>40Є {t("person")}</span> {t("pickupNo")} </Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>50Є per person</span> with pick-up and drop-off </Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>50Є {t("person")}</span> {t("pickupYes")} </Typography>
 
 
 <Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("booking")}</Typography>
@@ -129,30 +127,28 @@ i18n.changeLanguage(lang);
     <Box sx={{display:"flex", justifyContent:{lg:"flex-start", xs:"center"}, flexDirection:"column",
     marginTop:"20px", alignItems:{lg:"flex-start", xs:"center"}, marginLeft:{lg:20, xs:5}}}>
         <Typography style={{color:"darkgoldenrod"}} variant='h4'>{t("usefulInfo")}</Typography>
-        <Typography variant='h6' style={{marginBottom:"15px"}}>What is included?</Typography>
-        <Typography>- All equipment - Kayak, paddle, dry bag and safety vest if needed.</Typography>
+        <Typography variant='h6' style={{marginBottom:"15px"}}>{t("including")}</Typography>
+        <Typography>{t("allEquipment2")}</Typography>
        
-       <Typography>- Pick up and drop-off can be arranged</Typography>
+       <Typography>{t("arranged")}</Typography>
       
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>What to bring?</Typography>
-       <Typography>Swimwear, towel, dry clothes to change into, sunscreen and hat</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Safety</Typography>
-       <Typography>Previous Kayak experience is desirable but not essential. Julien will provide a detailed itinerary and all of the dos and don'ts for a safe and enjoyable experience.</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Weather</Typography>
-       <Typography>We closely monitor local weather forecasts and will inform you of what kind of weather you can expect.</Typography>
-
- <Typography> In the case of bad weather, we will try to reschedule your adventure or give you alternative locations. 
-
-​</Typography>
-<Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Meeting point</Typography>
-<Typography>Dragove bay but pick-up and drop-off can be arranged</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("what")}</Typography>
+       <Typography>{t("swimsuit")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("safety")}</Typography>
+       <Typography>{t("safety2")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("weather")}</Typography>
+       <Typography>{t("weather2")}</Typography>
+       <Typography>{t("weather3")}</Typography>
+ 
+<Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("meeting")}</Typography>
+<Typography>{t("meeting2")}</Typography>
 <Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("pricing")}</Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>30Є per person</span>  without pick-up or drop-off </Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>30Є {t("person")}</span>  {t("pickupNo")}</Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>40Є per person</span> with pick-up and drop-off </Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>40Є {t("person")}</span> {t("pickupYes")}</Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>8Є per person</span>  more for pack lunch</Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>8Є {t("person")}</span>  {t("morePack")}</Typography>
 
 
 <Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("booking")}</Typography>
@@ -196,28 +192,26 @@ i18n.changeLanguage(lang);
     <Box sx={{display:"flex", justifyContent:{lg:"flex-start", xs:"center"}, flexDirection:"column",
     marginTop:"20px", alignItems:{lg:"flex-start", xs:"center"}, marginLeft:{lg:20, xs:5}}}>
         <Typography style={{color:"darkgoldenrod"}} variant='h4'>{t("usefulInfo")}</Typography>
-        <Typography variant='h6' style={{marginBottom:"15px"}}>What is included?</Typography>
-        <Typography>- All equipment - Kayak/SUP, paddle, parasol, snorkling gear, dry bag and safety vest if needed.</Typography>
+        <Typography variant='h6' style={{marginBottom:"15px"}}>{t("including")}</Typography>
+        <Typography>{t("allEquipment")}</Typography>
        
-       <Typography>- Pick up and drop-off can be arranged</Typography>
-       <Typography>- Pack lunch with 750ml water per person</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>What to bring?</Typography>
-       <Typography>Swimwear, towel, dry clothes to change into, sunscreen and hat</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Safety</Typography>
-       <Typography>Previous SUP/Kayak experience is desirable but not essential. Julien will provide a detailed itinerary and all of the dos and don'ts for a safe and enjoyable experience.</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Weather</Typography>
-       <Typography>We closely monitor local weather forecasts and will inform you of what kind of weather you can expect.</Typography>
-
- <Typography> In the case of bad weather, we will try to reschedule your adventure or give you alternative locations. 
-
-​</Typography>
-<Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Meeting point</Typography>
-<Typography>Veli zal beach, but pick-up is also a possibility as well as other locations</Typography>
+       <Typography>{t("arranged")}</Typography>
+       <Typography>{t("lunch")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("what")}</Typography>
+       <Typography>{t("swimsuit")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("safety")}</Typography>
+       <Typography>{t("safety2")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("weather")}</Typography>
+       <Typography>{t("weather2")}</Typography>
+       <Typography>{t("weather3")}</Typography>
+ 
+<Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("meeting")}</Typography>
+<Typography>{t("meeting1")}</Typography>
 <Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("pricing")}</Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>40Є per person</span>  without pick-up or drop-off </Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>40Є {t("person")}</span> {t("pickupNo")} </Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>50Є per person</span> with pick-up and drop-off </Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>50Є {t("person")}</span> {t("pickupYes")} </Typography>
 
 
 <Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("booking")}</Typography>

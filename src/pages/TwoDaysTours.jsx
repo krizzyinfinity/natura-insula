@@ -64,29 +64,27 @@ i18n.changeLanguage(lang);
     <Box sx={{display:"flex", justifyContent:{lg:"flex-start", xs:"center"}, flexDirection:"column",
     marginTop:"20px", alignItems:{lg:"flex-start", xs:"center"}, marginLeft:{lg:20, xs:5}}}>
         <Typography style={{color:"darkgoldenrod"}} variant='h4'>{t("usefulInfo")}</Typography>
-        <Typography variant='h6' style={{marginBottom:"15px"}}>What is included?</Typography>
-        <Typography>- All equipment - Kayak, paddle, snorkling gear, parasol, dry bag and safety vest if needed.</Typography>
+        <Typography variant='h6' style={{marginBottom:"15px"}}>{t("including")}</Typography>
+        <Typography>{t("allEquipment")}</Typography>
        
-       <Typography>- Pick up and drop-off from Brbinj/Bozava harbour</Typography>
-       <Typography>- Pack lunch with 750ml water per person for 2 days</Typography>
-       <Typography>- Breakfast and coffee on day 2</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>What to bring?</Typography>
-       <Typography>Swimwear, towel, dry clothes to change into, sunscreen and hat</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Safety</Typography>
-       <Typography>Previous Kayak experience and good fitness level is a must. Julien will provide a detailed itinerary and all of the dos and don'ts for a safe and enjoyable experience.</Typography>
-       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Weather</Typography>
-       <Typography>We closely monitor local weather forecasts and will inform you of what kind of weather you can expect.</Typography>
-
- <Typography> In the case of bad weather, we will try to reschedule your adventure or give you alternative locations. 
-
-​</Typography>
-<Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>Meeting point</Typography>
+       <Typography>{t("pickUp")}</Typography>
+       <Typography>{t("lunch2")}</Typography>
+       <Typography>{t("breakfast")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("what")}</Typography>
+       <Typography>{t("swimsuit")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("safety")}</Typography>
+       <Typography>{t("safety3")}</Typography>
+       <Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("weather")}</Typography>
+       <Typography>{t("weather2")}</Typography>
+       <Typography>{t("weather3")}</Typography>
+ 
+<Typography style={{marginBottom:"15px", marginTop:"15px"}} variant='h6'>{t("meeting")}</Typography>
 <Typography>Brbinj/Bozava port</Typography>
 <Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("pricing")}</Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>100Є per person</span>  with tent option</Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>100Є {t("person")}</span>  {t("tent")}</Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>Between 130Є and 150Є per person </span>for studio apartment with swimming pool based on the time of the year</Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>{t("between")} 130Є and 150Є {t("person")} </span>{t("studio")}</Typography>
 
 
 <Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("booking")}</Typography>
