@@ -148,7 +148,7 @@ i18n.changeLanguage(lang);
 
 <Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>40Є {t("person")}</span> {t("pickupYes")}</Typography>
 
-<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>8Є {t("person")}</span>  {t("morePack")}</Typography>
+<Typography variant='h6' style={{marginBottom:"15px"}}><span style={{fontWeight:"bold"}}>9Є {t("person")}</span>  {t("morePack")}</Typography>
 
 
 <Typography style={{color:"darkgoldenrod", marginTop:20}} variant='h4'>{t("booking")}</Typography>
